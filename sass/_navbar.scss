@@ -1,0 +1,24 @@
+@use 'variables';
+.navbar{
+    
+    width: 400px;
+    &__items{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        text-decoration: none;
+        color: variables.$Dark-grayish-blue;
+        display: block;
+        height: 112px;
+        line-height: 112px;
+        transition: all 200ms ease-out;
+        &:hover{
+            border-bottom: 4px solid variables.$Orange;
+        }
+    }
+    @media (max-width: 1115px) {
+        display: none;
+    }
+}
